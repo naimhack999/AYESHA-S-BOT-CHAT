@@ -17,11 +17,11 @@ module.exports.handleEvent = async ({ event, api, Users }) => {
  if (senderID === api.getCurrentUserID()) return;
  
  const bannedWords = [
- "chudi", "baler bot", "chutiya bot", "bot bokasoda", "bot tor boss re chudi",
- "বালের বট", "ভোদার বট", "ধোনের বট", "তোর বস রে চুদি", "শাহাদাৎ যে চুদি",
- "sahadat mc", "mc Sahu", "bokachoda sahu", "fuck you", "sex", "sexy",
+ "chudi", "baler bot", "chutiya bot", "bot bokasoda", "bot tor owner re chudi",
+ "বালের বট", "ভোদার বট", "ধোনের বট", "তোর মেডাম রে চুদি", "𝗔𝘆𝗲𝘀𝗵𝗮 𝗤𝘂𝗲𝗲𝗻 যে চুদি",
+ "Ayesha mc", "mc Ayesha", "bokachoda Ayesha", "fuck you", "sex", "sexy",
  "hedar bot", "বট চুদি", "crazy bot", "bc bot", "khankir polar bot",
- "bot tor heda", "হেড়ার বট", "bot paylac rồi", "con bot lòn", "cmm bot",
+ "bot tor heda", "হেড়ার বট", "bot khanki", "bot khankirpola", "khankirpola bot",
  "clap bot", "bot ncc", "bot oc", "bot óc", "bot óc chó", "cc bot",
  "bot tiki", "lozz bottt", "lol bot", "loz bot", "xxx", "boder bot",
  "bot lon", "x video", "xx", "x", "bot sudi", "bot sida",
@@ -32,7 +32,7 @@ module.exports.handleEvent = async ({ event, api, Users }) => {
  const userName = await Users.getNameUser(senderID);
  
  const warningMessage = {
- body: `» Notice from Owner SA HU «\n\n${userName}, You are stupid for cursing bots so bots automatically banned you from the system`
+ body: `» Notice from Owner 𝗔𝘆𝗲𝘀𝗵𝗮 𝗤𝘂𝗲𝗲𝗻 «\n\n${userName}, You are stupid for cursing bots so bots automatically banned you from the system`
  };
 
  
