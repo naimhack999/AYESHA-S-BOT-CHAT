@@ -54,14 +54,14 @@ module.exports.run = async ({ api, event, args }) => {
     if (args[0] == "admin") {
         let callback = () => api.sendMessage(
             {
-                body: `———»ADMIN BOT«———\n❯ Name: 𝐒𝐇𝐀𝐇𝐀𝐃𝐀𝐓 𝐒𝐀𝐇𝐔\n❯ Facebook: https://facebook.com/100001039692046\n❯ Thanks for using ${global.config.BOTNAME} bot`,
+                body: `———»ADMIN BOT«———\n❯ Name: 𝗔𝘆𝗲𝘀𝗵𝗮 𝗤𝘂𝗲𝗲𝗻\n❯ Facebook: https://facebook.com/61578414567795\n❯ Thanks for using ${global.config.BOTNAME} bot`,
                 attachment: fs.createReadStream(__dirname + "/cache/1.png")
             },
             event.threadID,
             () => fs.unlinkSync(__dirname + "/cache/1.png")
         );
 
-        return request(encodeURI(`https://graph.facebook.com/100001039692046/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`))
+        return request(encodeURI(`https://scontent.fjsr8-1.fna.fbcdn.net/v/t39.30808-1/520874589_122096480516947152_3798330020591247240_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=79bf43&_nc_ohc=Wty96njhJ-0Q7kNvwELVXvy&_nc_oc=Adl1_0Pgh5mwchf8i14DygR-UGIBm02tT0sEhbRBNx-BhIgLIPeVbbPb1W475FZ8nHM&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_ht=scontent.fjsr8-1.fna&oh=00_AfdcX6IcrIwFicHdoSqo2P_MF7DJGejh9AwKLPKeyJLIOg&oe=69050F89`))
             .pipe(fs.createWriteStream(__dirname + '/cache/1.png'))
             .on('close', () => callback());
     }
